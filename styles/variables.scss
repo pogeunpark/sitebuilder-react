@@ -1,0 +1,79 @@
+// layout
+
+$break-points: (
+  mobile: 768px,
+  laptop: 1240px,
+  desktop: 1920px,
+);
+
+@mixin media-query($breakpoint) {
+  $breakpoint-value: map-get($break-points, $breakpoint);
+  @media (min-width: ($breakpoint-value)) {
+    @content;
+  }
+}
+
+$container-width: 1200px;
+@mixin flex-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// colors
+$bg-light: rgb(251, 251, 251);
+$bg-light-alt: rgb(243, 243, 243);
+$bg-dark: rgb(34, 34, 34);
+$bg-dark-alt: rgb(31, 31, 31);
+$font-light: rgb(190, 190, 190);
+$font-dark: rgb(81, 81, 81);
+$primary-color: rgb(16, 16, 180);
+$primary-alt-color: rgb(206, 206, 253);
+
+// font sizes
+$font-xs: 0.6rem;
+$font-s: 0.8rem;
+$font-m: 1rem;
+$font-l: 1.2rem;
+$font-xl: 1.4rem;
+$h1: 5rem;
+$h2: 4rem;
+$h3: 3.2rem;
+$h4: 2.8rem;
+$h5: 2.4rem;
+
+// spaces
+$space-xs: 0.3rem;
+$space-s: 0.5rem;
+$space-m: 1rem;
+$space-l: 1.6rem;
+$space-xl: 2.56rem;
+
+// button
+$border-radius: 4px;
+
+@mixin btn($color, $font, $size) {
+  background-color: $color;
+  color: $bg-light;
+  @if ($color == $primary-alt-color) {
+    color: $primary-color;
+  }
+  font-size: $font;
+  font-weight: 600;
+  padding: calc($size / 2) $size;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: $border-radius;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -15px $color;
+  }
+}
+
+// misc
+@mixin focus-outline {
+  outline: 2px dotted $bg-dark-alt;
+}

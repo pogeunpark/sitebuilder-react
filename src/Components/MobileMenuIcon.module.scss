@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+
+.menu {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 999;
+  &:focus {
+    @include focus-outline;
+  }
+  @include media-query(mobile) {
+    display: none;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .icon-top {
+      width: 40px;
+      height: 3px;
+      background-color: $bg-dark;
+      transition: width 0.4s, transform 0.4s;
+    }
+    .icon-middle {
+      width: 40px;
+      height: 3px;
+      background-color: $bg-dark;
+      transition: width 0.4s, transform 0.4s;
+    }
+    .icon-bottom {
+      width: 40px;
+      height: 3px;
+      background-color: $bg-dark;
+      transition: width 0.4s, transform 0.4s;
+    }
+  }
+}
+
+.clicked {
+  .icon {
+    transform: translateX(15px);
+    .icon-top {
+      transform: rotate(45deg) translateY(18.5px);
+    }
+    .icon-middle {
+      opacity: 0;
+    }
+    .icon-bottom {
+      transform: rotate(-45deg) translateY(-18.5px);
+    }
+  }
+}

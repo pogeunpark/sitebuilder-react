@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+
+.header {
+  background-color: $bg-light-alt;
+  width: 100%;
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-m 0;
+    .logo {
+      border: 3px solid $bg-dark-alt;
+      padding: 5px 15px;
+      color: $bg-dark;
+      font-size: $font-l;
+      font-weight: 500;
+      text-decoration: none;
+      &:focus {
+        @include focus-outline;
+      }
+    }
+    .nav {
+      display: none;
+      @include media-query(mobile) {
+        display: flex;
+      }
+      .items {
+        display: flex;
+        list-style: none;
+        gap: $space-l;
+        .item a {
+          color: $bg-dark;
+          font-size: $font-m;
+          font-weight: 500;
+          text-decoration: none;
+          padding: $space-s;
+          transition: border-bottom 0.2s;
+          &:hover {
+            border-bottom: 3px solid $primary-color;
+          }
+          &:focus {
+            @include focus-outline;
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  border-bottom: 3px solid $primary-color;
+}
