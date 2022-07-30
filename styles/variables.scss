@@ -1,5 +1,4 @@
 // layout
-
 $break-points: (
   mobile: 768px,
   laptop: 1240px,
@@ -32,23 +31,26 @@ $primary-color: rgb(16, 16, 180);
 $primary-alt-color: rgb(206, 206, 253);
 
 // font sizes
-$font-xs: 0.6rem;
-$font-s: 0.8rem;
-$font-m: 1rem;
-$font-l: 1.2rem;
-$font-xl: 1.4rem;
+$font-xs: 0.8rem;
+$font-s: 1rem;
+$font-m: 1.2rem;
+$font-l: 1.4rem;
+$font-xl: 1.6rem;
 $h1: 5rem;
-$h2: 4rem;
-$h3: 3.2rem;
-$h4: 2.8rem;
-$h5: 2.4rem;
+$h2: 3rem;
+$h3: 2rem;
+$h4: 1.6rem;
+$h5: 1.4rem;
+$h6: 1.2rem;
+$line-height: 1.6;
 
 // spaces
-$space-xs: 0.3rem;
-$space-s: 0.5rem;
-$space-m: 1rem;
-$space-l: 1.6rem;
-$space-xl: 2.56rem;
+$space-xs: 0.5rem;
+$space-s: 1rem;
+$space-m: 1.5rem;
+$space-l: 2rem;
+$space-xl: 3rem;
+$space-section: clamp(4rem, calc(4rem + ((1vw - 0.48rem) * 8.3333)), 10rem);
 
 // button
 $border-radius: 4px;

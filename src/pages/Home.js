@@ -1,8 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import HomeHero from "../Components/home/HomeHero";
+import RencentArticles from "../Components/home/RencentArticles";
 
 const Home = () => {
-  return <HomeHero />;
+  return (
+    <Fragment>
+      <HomeHero />
+      <RencentArticles />
+    </Fragment>
+  );
 };
 
 export default Home;

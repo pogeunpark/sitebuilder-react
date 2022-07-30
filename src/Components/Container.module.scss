@@ -3,5 +3,11 @@
 .container {
   max-width: $container-width;
   margin: 0 auto;
-  padding: 0 $space-m;
+  padding: 0 $space-s;
+}
+
+section {
+  .container {
+    padding: $space-section $space-s;
+  }
 }

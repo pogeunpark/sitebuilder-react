@@ -2,12 +2,12 @@ import { Fragment } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.scss";
 
-import Header from "./Components/Header";
-import Layout from "./Components/Layout";
 import OffCanvas from "./Components/OffCanvas";
+import Header from "./Components/Header";
+import Home from "./pages/Home";
+import Layout from "./Components/Layout";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Home from "./pages/Home";
 
 const App = () => {
   return (
