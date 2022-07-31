@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+.title {
+  margin-bottom: $space-m;
+}
+.subtitle {
+  max-width: $text-max-width;
+  margin-bottom: $space-xl;
+}

@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Layout from "./Components/Layout";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
           <Home />
         </Route>
         <Layout>
+          <Route path="/blog">
+            <Blog />
+          </Route>
           <Route path="/about">
             <About />
           </Route>

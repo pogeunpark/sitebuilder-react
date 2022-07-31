@@ -3,12 +3,15 @@
 .articles {
   background-color: $bg-light-alt;
 }
+.white {
+  background-color: $bg-light;
+}
 .title {
   margin-bottom: $space-l;
 }
 .subtitle {
   margin-bottom: $space-xl;
-  max-width: 700px;
+  max-width: $text-max-width;
 }
 .cards {
   display: grid;

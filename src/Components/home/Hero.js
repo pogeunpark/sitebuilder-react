@@ -1,13 +1,16 @@
 import React from "react";
 import Container from "../Container";
 
-import classes from "./HomeHero.module.scss";
-const HomeHero = () => {
+import classes from "./Hero.module.scss";
+const Hero = () => {
   return (
     <section className={classes["home-hero"]}>
       <Container>
         <div className={classes["inner-wrap"]}>
-          <h2 className={classes.title}>Hero Section</h2>
+          <h2 className={classes.title}>
+            SiteBuilder provides infomative and educational resources for web
+            DIYers
+          </h2>
           <p className={classes.subtitle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -24,4 +27,4 @@ const HomeHero = () => {
   );
 };
 
-export default HomeHero;
+export default Hero;

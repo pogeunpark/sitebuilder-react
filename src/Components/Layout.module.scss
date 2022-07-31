@@ -1,7 +1,10 @@
 @import "../../styles/variables.scss";
 
 .layout {
+  width: calc(100% - 2 * $space-s);
   max-width: $container-width;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 0 $space-m;
+  padding: $space-xl $space-s;
+  background-color: $bg-light;
 }

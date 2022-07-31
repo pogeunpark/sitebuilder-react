@@ -10,7 +10,7 @@ const Card = (props) => {
       <div className={classes["text-wrap"]}>
         <h3 className={classes.title}>{props.title}</h3>
         <time className={classes.date}>{props.date}</time>
-        <p className={classes.author}>{props.author}</p>
+        {/* <p className={classes.author}>{props.author}</p> */}
       </div>
     </div>
   );
