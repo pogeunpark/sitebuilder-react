@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.contact {
+  background-color: $primary-color;
+}
+.title {
+  color: $bg-light;
+  margin-bottom: $space-l;
+}
+.subtitle {
+  color: $font-light;
+  margin-bottom: $space-l;
+  max-width: $text-max-width;
+}
+.form {
+  width: 100%;
+  @include media-query(mobile) {
+    width: 50%;
+  }
+  .control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $space-m;
+  }
+  label {
+    color: $font-light;
+    font-weight: 600;
+    margin-bottom: $space-xs;
+  }
+  input,
+  textarea {
+    font-size: $font-m;
+    padding: $space-s;
+    border: none;
+    border-radius: $border-radius;
+
+    &:focus {
+      background-color: $primary-alt-color;
+    }
+  }
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  .submit {
+    @include btn($primary-alt-color, $font-l, $space-l);
+    margin-top: 2rem;
+  }
+}

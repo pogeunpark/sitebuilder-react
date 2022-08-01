@@ -5,6 +5,7 @@ import { fetchPostData } from "../store/store";
 import Hero from "../Components/home/Hero";
 import Cards from "../Components/home/Cards";
 import AboutUs from "../Components/home/AboutUs";
+import Contact from "../Components/home/Contact";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ const Home = () => {
       <Hero />
       <Cards posts={posts} />
       <AboutUs />
+      <Contact />
     </Fragment>
   );
 };
