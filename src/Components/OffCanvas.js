@@ -19,22 +19,22 @@ const OffCanvas = () => {
         <ul className={classes.items}>
           <li className={classes.item}>
             <Link to="/home" onClick={closeCanvasHandler}>
-              Home
+              home
             </Link>
           </li>
           <li className={classes.item}>
             <Link to="/blog" onClick={closeCanvasHandler}>
-              Blog
+              blog
             </Link>
           </li>
           <li className={classes.item}>
             <Link to="/about" onClick={closeCanvasHandler}>
-              About
+              about
             </Link>
           </li>
           <li className={classes.item}>
             <Link to="/contact" onClick={closeCanvasHandler}>
-              Contact
+              contact
             </Link>
           </li>
         </ul>

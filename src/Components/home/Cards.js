@@ -33,9 +33,9 @@ const Cards = (props) => {
       </Link> */}
     </section>
   ) : (
-    <section>
+    <section className={isBlog ? classes.white : classes.articles}>
       <Container>
-        <h2 className={classes.title}>Recent Articles</h2>
+        <h2 className={classes.title}>Recent articles</h2>
         <p className={classes.subtitle}>
           Et sint Lorem nisi id do ullamco.Sit nostrud quis ullamco sit
           voluptate laboris occaecat. Deserunt voluptate ut sint proident amet

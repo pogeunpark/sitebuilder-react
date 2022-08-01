@@ -81,3 +81,7 @@ $border-radius: 4px;
 @mixin focus-outline {
   outline: 2px dotted $bg-dark-alt;
 }
+
+@mixin kr-word-break {
+  word-break: keep-all;
+}

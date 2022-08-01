@@ -8,7 +8,6 @@ const MobileMenuIcon = () => {
 
   const hamburgerClickHandler = () => {
     dispatch(offCanvasActions.toggle());
-    console.log("clicked");
   };
 
   return (

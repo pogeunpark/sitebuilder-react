@@ -10,28 +10,28 @@ const Header = () => {
       <Container>
         <div className={classes.row}>
           <Link to="/home" className={classes.logo}>
-            SiteBuilder
+            siteBuilder
           </Link>
           <nav className={classes.nav}>
             <ul className={classes.items}>
               <li className={classes.item}>
                 <NavLink activeClassName={classes.active} to="/home">
-                  Home
+                  home
                 </NavLink>
               </li>
               <li className={classes.item}>
                 <NavLink activeClassName={classes.active} to="/blog">
-                  Blog
+                  blog
                 </NavLink>
               </li>
               <li className={classes.item}>
                 <NavLink activeClassName={classes.active} to="/about">
-                  About
+                  about
                 </NavLink>
               </li>
               <li className={classes.item}>
                 <NavLink activeClassName={classes.active} to="/contact">
-                  Contact
+                  contact
                 </NavLink>
               </li>
             </ul>

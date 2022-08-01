@@ -1,4 +1,4 @@
-@import "../../../styles/variables.scss";
+@import "../../styles/variables.scss";
 
 .card {
   width: 100%;
@@ -17,6 +17,7 @@
   .text-wrap {
     background-color: $bg-light;
     padding: $space-m;
+    height: 100%;
     .title {
       margin-bottom: $space-s;
       font-size: $font-m;

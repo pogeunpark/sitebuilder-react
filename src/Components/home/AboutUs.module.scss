@@ -1,9 +1,6 @@
 @import "../../styles/variables.scss";
 
-.articles {
-  background-color: $bg-light-alt;
-}
-.white {
+.about {
   background-color: $bg-light;
 }
 .title {
@@ -13,11 +10,18 @@
   margin-bottom: $space-xl;
   max-width: $text-max-width;
 }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 3rem;
-  margin-bottom: $space-xl;
+.img {
+  width: 100%;
+  margin-bottom: $space-l;
+}
+.heading {
+  margin-bottom: $space-l;
+}
+.paragraph {
+  margin-bottom: $space-l;
+  @include media-query(mobile) {
+    columns: 2;
+  }
 }
 .more {
   text-decoration: none;

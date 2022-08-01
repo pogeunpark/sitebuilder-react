@@ -6,6 +6,7 @@ import PageHeader from "../Components/PageHeader";
 
 const Blog = () => {
   const dispatch = useDispatch();
+  const posts = useSelector((state) => state.blogs.blogs);
   const page = 1;
   const posts_per_page = 9;
 
@@ -13,7 +14,6 @@ const Blog = () => {
     dispatch(fetchBlogData(page, posts_per_page));
   }, [dispatch]);
 
-  const posts = useSelector((state) => state.blogs.blogs);
   return (
     <div>
       <PageHeader

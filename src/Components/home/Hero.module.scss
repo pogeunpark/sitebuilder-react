@@ -1,4 +1,4 @@
-@import "../../../styles/variables.scss";
+@import "../../styles/variables.scss";
 
 .home-hero {
   h1,
@@ -24,6 +24,9 @@
     margin-bottom: $space-l;
     text-align: center;
     max-width: $text-max-width;
+    .sitebuilder {
+      color: $primary-alt-color;
+    }
   }
   .subtitle {
     color: $font-light;

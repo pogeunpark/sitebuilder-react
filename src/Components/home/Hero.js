@@ -8,8 +8,8 @@ const Hero = () => {
       <Container>
         <div className={classes["inner-wrap"]}>
           <h2 className={classes.title}>
-            SiteBuilder provides infomative and educational resources for web
-            DIYers
+            <span className={classes.sitebuilder}>siteBuilder</span> provides
+            infomative and educational resources for web DIYers
           </h2>
           <p className={classes.subtitle}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
